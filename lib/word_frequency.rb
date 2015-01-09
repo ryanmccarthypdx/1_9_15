@@ -1,6 +1,6 @@
 class String
   define_method(:word_frequency) do |target|
-    split_self = self.split(" ")
+    split_self = self.downcase().split(" ")
     output = 0
     if split_self.include?(target)
       output = output.+(1)
