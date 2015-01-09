@@ -19,9 +19,9 @@ describe('String#word_frequency') do
     expect("Quintus est puer Romanus".word_frequency("quint")).to(eq("That word did not appear"))
   end
 
-  #it counts
-
-
+  it('counts words') do
+    expect("Quintus est puer et Romanus et fortis".word_frequency("et")).to(eq(2))
+  end
 
 end
 
