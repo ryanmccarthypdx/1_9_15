@@ -23,6 +23,7 @@ describe('String#word_frequency') do
     expect("Quintus est puer et Romanus et fortis".word_frequency("et")).to(eq(2))
   end
 
+
 end
 
 #Your assignment: Create a website that uses a method to return how frequently
