@@ -4,8 +4,9 @@
 
 <div class="result_text">
 
-<p>You entered:<span class='input_confirm'> <%= @input_word %> </span></p>
+<p>Your text: <span class='bold_red'> <%= @search_string %> </span></p>
+<p>You wanted to search for: <span class='bold_red'> <%= @target_word %> </span></p>
 
-<p>Your score is: <span class='input_confirm'> <%= @result %> </span></p>
+<p>My mighty computer brain has concluded that <span class='bold_red'><%= @target_word %></span> appears <span class='bold_red'> <%= @result %> </span> time(s).</p>
 
 </div>

@@ -4,7 +4,7 @@ class String
     if split_self.include?(search)
       split_self.count(search)
     else
-      "That word did not appear"
+      0
     end
   end
 end
