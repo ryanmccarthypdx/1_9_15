@@ -15,9 +15,10 @@ describe('String#word_frequency') do
     expect("Quintus est puer Romanus".word_frequency("quintus")).to(eq(1))
   end
 
+  it('only works on whole words') do
+    expect("Quintus est puer Romanus".word_frequency("quint")).to(eq("That word did not appear"))
+  end
 
-  #it is case insensitive
-  #it only works on whole words
   #it counts
 
 
